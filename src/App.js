@@ -1,13 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import ClickCounter from './components/ClickCounter';
-import HoverCounter from './components/HoverCounter';
+import ProductList from './features/product/ProductList';
+import data from './products.json'
 
 function App() {
   return (
     <div>
-      <ClickCounter></ClickCounter>
-      <HoverCounter></HoverCounter>
+      <ProductList data={data.products}></ProductList>
     </div>
   );
 }

@@ -1,3 +1,5 @@
+import ProductCard from "./ProductCard";
+
 const ProductList = (props) =>{
     return(
         <div>
@@ -5,7 +7,7 @@ const ProductList = (props) =>{
                 <h2>Product</h2>
             </div>
             <div>
-                {props.data.map((p) => <ProductCard key = {p.productId} product={p}/>)}
+                {props.data.map((p) => <ProductCard key = {p.productId} data={p}/>)}
             </div>
         </div>
     
